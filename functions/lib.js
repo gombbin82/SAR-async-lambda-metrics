@@ -252,8 +252,8 @@ const processAll = async (cwLogEvents) => {
 		const functionVersion = cwLogEvent.logStream.substring(start+1, end)
 
 		const dimensions = [
-			{ Name: 'FunctionName', Value: functionName },
-			{ Name: 'FunctionVersion', Value: functionVersion }
+			// { Name: 'FunctionName', Value: functionName },
+			// { Name: 'FunctionVersion', Value: functionVersion }
 		]
 
 		return _.flatMap(
